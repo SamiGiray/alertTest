@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func clickedButton(_ sender: Any) {
+        
+        
+        let alert = UIAlertController(title: "Error", message: "User not found", preferredStyle: UIAlertController.Style.alert )
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+        
+        
+    }
+    
 }
 
